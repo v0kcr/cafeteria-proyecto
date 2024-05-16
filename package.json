@@ -1,0 +1,26 @@
+{
+  "name": "cafeteria_borrador",
+  "version": "1.0.0",
+  "description": "Aprendiendo Sass y Gulp ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Natalia Morales",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "gulp": "^5.0.0",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-avif": "^0.1.6",
+    "sass": "^1.77.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
+}
