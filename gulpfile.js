@@ -10,7 +10,7 @@ const autoprefixer =require('autoprefixer');
 // Imagenes (dependencias)
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp'); //el paguete gulp-webp es la que exporta la función (webp) que puedes llamar como desees 
-const avif = require('imagemin-avif');
+//const avif = require('imagemin-avif');
 
 function css( done ) {
     // compilar sass
@@ -63,7 +63,7 @@ exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 // exports.versionAvif = versionAvif;
 
-exports.default = series( imagenes, versionWebp, versionAvif, css, dev ); //se hace run con gulp
+exports.default = series( imagenes, versionWebp, css, dev ); //se hace run con gulp
 
 //series - Se inicia una tarea, y hasta que finaliza, inicia la siguiente
 // parallel - Todas inician al mismo tiempo
