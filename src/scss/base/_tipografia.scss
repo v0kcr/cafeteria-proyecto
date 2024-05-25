@@ -1,26 +1,23 @@
 @use 'variables' as v;
-@use 'mixins' as m;
 
 h1, h2, h3 {
-    font-family: v.$fuente_principal;
+    font-family: v.$fuentePrincipal;
     margin: 0 0 v.$separacion 0;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.5;
 }
-
-h1{
+h1 {
     font-size: 4rem;
 }
-
-h2{
+h2 {
     font-size: 3.6rem;
     color: v.$primario;
 
     span {
-        color: v.$secundario;
-        font-size: 1.8rem;
-        display: block;
+         color: v.$secundario;
+         font-size: 1.8rem;
+         display: block;
     }
 
     &::after {
@@ -34,6 +31,18 @@ h2{
     }
 }
 
-h3{
+.heading-blanco {
+    @extend h2; //reutiliza propiedades y valores de un selector (h2) para no reescribir
+    color: v.$blanco;
+
+    span {
+        color: v.$blanco;
+    }
+    &::after {
+        display: none;
+    }
+}
+
+h3 {
     font-size: 3.2rem;
 }

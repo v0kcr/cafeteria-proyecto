@@ -1,18 +1,17 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
-@use 'sass:math';
 
 .nav-principal {
-    display:    flex;
+    display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    @include m.table { 
+    @include m.tablet { 
         flex-direction: row;
-        gap: math.div(v.$separacion, 4);
+        gap: 1rem;
         margin-top: 0;
     }
 
-    a{
+    a {
         text-align: center;
         color: v.$blanco;
         font-size: 2rem;
@@ -23,11 +22,11 @@
             margin-bottom: 0;
         }
 
-        &:hover{
+        &:hover {
             color: v.$secundario;
         }
 
-        &.activo { /*con AMPERSON quitamos el espacio*/
+        &.activo {
             color: v.$secundario;
         }
     }
